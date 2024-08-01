@@ -1094,8 +1094,9 @@ h6 {
   transition: all 0.5s ease-in-out;
 }
 
-.easy__info-s_active {
-  width: 100%;
+.easy__info-s {
+  margin: 0 auto;
+  width: 328px;
   border-radius: 32px;
   background-color: #ffffff;
   -webkit-box-shadow: 2.33px 2.33px 15.21px 0px rgba(0, 0, 0, 0.0784313725);
@@ -1237,6 +1238,10 @@ h6 {
 }
 
 /* Слайдер */
+
+.slick-slider {
+  margin-bottom: 16px;
+}
 
 /* Ограничивающая оболочка */
 
@@ -1935,8 +1940,37 @@ body.lock {
     position: static;
   }
 
+  .easy__info-badge span {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .easy__info-item_active {
+    min-height: 307px;
+    max-width: 400px;
+    min-width: unset;
+    padding: 32px 95px 32px 25px;
+    overflow: hidden;
+    margin: 0 auto 0;
+  }
+
+  .easy__bullet {
+    width: 180px;
+    height: 180px;
+  }
+
+  .easy__info-item_6 .easy__info-img {
+    height: 115%;
+  }
+
   .easy__subtitle {
     display: none;
+  }
+
+  .easy__info-img {
+    height: 100%;
+    right: 0px;
+    width: 328px;
   }
 }
 
@@ -2065,6 +2099,10 @@ body.lock {
   .benefits__col {
     padding: 0;
     margin-bottom: 20px;
+  }
+
+  .easy__link {
+    margin: 44px auto;
   }
 }
 
