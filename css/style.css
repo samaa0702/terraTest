@@ -224,6 +224,30 @@ h6 {
   }
 }
 
+@-webkit-keyframes margin-anim {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+}
+
+@keyframes margin-anim {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+}
+
 .first-page {
   margin-top: 88px;
 }
@@ -405,6 +429,7 @@ h6 {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  overflow: hidden;
 }
 
 [class*=innovations__img] {
@@ -413,6 +438,7 @@ h6 {
 }
 
 .innovations__img_1 {
+  margin-bottom: -20%;
   z-index: 3;
   margin-top: 11%;
   position: relative;
@@ -520,6 +546,12 @@ h6 {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   top: 18.5%;
+}
+
+.innovations__img_anim {
+  -webkit-transform: translateY(-20%);
+      -ms-transform: translateY(-20%);
+          transform: translateY(-20%);
 }
 
 .effects__title {
@@ -1663,8 +1695,8 @@ body.lock {
   }
 
   .learn-more__row {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .learn-more__title {
@@ -1928,6 +1960,14 @@ body.lock {
     margin-top: 80px;
   }
 
+  .bg-gray {
+    padding-bottom: 40px !important;
+  }
+
+  .easy__title {
+    margin-top: 80px;
+  }
+
   .easy1 {
     display: none;
   }
@@ -2028,7 +2068,7 @@ body.lock {
   }
 
   .img-wrapper {
-    margin-top: 140px;
+    margin-top: 40px;
   }
 
   .innovations__green1 p {
@@ -2041,6 +2081,10 @@ body.lock {
     font-size: 7px;
     font-weight: 700;
     line-height: 10px;
+  }
+
+  .effects__item_lg .effects__image {
+    margin-bottom: 24px;
   }
 
   .bg-gray {
@@ -2191,6 +2235,17 @@ body.lock {
             animation-name: card-animation;
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.1, 0, 1, 1);
+            animation-timing-function: cubic-bezier(0.1, 0, 1, 1);
+  }
+
+  .innovations__img_anim {
+    -webkit-animation-name: margin-anim;
+            animation-name: margin-anim;
+    -webkit-animation-duration: 0.9s;
+            animation-duration: 0.9s;
     -webkit-animation-iteration-count: 1;
             animation-iteration-count: 1;
     -webkit-animation-timing-function: cubic-bezier(0.1, 0, 1, 1);
