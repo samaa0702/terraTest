@@ -307,22 +307,6 @@ h6 {
   outline: none !important;
 }
 
-.first-page__btn:hover {
-  -webkit-box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.1019607843);
-          box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.1019607843);
-  -webkit-transform: translateY(-5px);
-      -ms-transform: translateY(-5px);
-          transform: translateY(-5px);
-}
-
-.first-page__btn:active {
-  -webkit-box-shadow: inset 4px 4px 20px 0px rgba(0, 0, 0, 0.168627451);
-          box-shadow: inset 4px 4px 20px 0px rgba(0, 0, 0, 0.168627451);
-  -webkit-transform: translateY(0px);
-      -ms-transform: translateY(0px);
-          transform: translateY(0px);
-}
-
 .first-page__btn-text {
   font-family: "Inter", sans-serif;
   font-size: 20px;
@@ -818,22 +802,6 @@ h6 {
   outline: none !important;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-
-.learn-more__btn:hover {
-  -webkit-box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.1019607843);
-          box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.1019607843);
-  -webkit-transform: translateY(-5px);
-      -ms-transform: translateY(-5px);
-          transform: translateY(-5px);
-}
-
-.learn-more__btn:active {
-  -webkit-box-shadow: inset 4px 4px 20px 0px rgba(0, 0, 0, 0.168627451);
-          box-shadow: inset 4px 4px 20px 0px rgba(0, 0, 0, 0.168627451);
-  -webkit-transform: translateY(0px);
-      -ms-transform: translateY(0px);
-          transform: translateY(0px);
 }
 
 .learn-more__btn-text {
