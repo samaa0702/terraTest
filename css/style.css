@@ -2056,10 +2056,6 @@ body.lock {
     line-height: 10px;
   }
 
-  .effects__item_lg .effects__image {
-    margin-bottom: 24px;
-  }
-
   .bg-gray {
     padding-top: 80px !important;
   }
@@ -2079,6 +2075,10 @@ body.lock {
 
   .effects__col {
     padding: 10px 0;
+  }
+
+  .effects__item_lg .effects__image {
+    margin-bottom: 24px !important;
   }
 
   .effects__item-title {
@@ -2116,8 +2116,17 @@ body.lock {
     display: none;
   }
 
+  .comfort__row {
+    margin-top: 40px;
+  }
+
   .comfort__col {
     padding: 0 0 20px;
+  }
+
+  .benefits__item-title {
+    font-size: 24px;
+    line-height: 30px;
   }
 
   .benefits__col {
@@ -2155,6 +2164,10 @@ body.lock {
 @media (max-width: 499.98px) {
   .learn-more__text {
     margin-bottom: 44px;
+  }
+
+  .learn-more__title {
+    margin-bottom: 12px;
   }
 
   .learn-more__wave {
