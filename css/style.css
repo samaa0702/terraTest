@@ -2148,6 +2148,10 @@ body.lock {
   .easy__link {
     margin: 44px auto;
   }
+
+  .slick-slide {
+    padding: 0 15px;
+  }
 }
 
 @media (max-width: 500.02px) {
