@@ -2089,6 +2089,8 @@ body.lock {
 
   .effects__item_gray {
     padding-bottom: 40px;
+    width: 260px;
+    margin: 0 auto;
     height: 312px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
