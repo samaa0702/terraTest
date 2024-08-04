@@ -672,8 +672,43 @@ h6 {
   margin-bottom: 30px;
 }
 
-.carousel__inside {
+.inside-slider {
   display: none;
+  /* Слайдер */
+  /* Ограничивающая оболочка */
+  /* Лента слайдов */
+  /* Слайд */
+}
+
+.inside-slider .slick-slider {
+  margin-bottom: 16px;
+}
+
+.inside-slider .slick-list {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.inside-slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  z-index: 2;
+}
+
+.inside-slider .slick-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .inside__col {
@@ -967,6 +1002,56 @@ h6 {
 
 .easy2 {
   display: none !important;
+  /* Слайдер */
+  /* Ограничивающая оболочка */
+  /* Лента слайдов */
+  /* Слайд */
+}
+
+.easy2 .slick-slider {
+  margin-bottom: 16px;
+}
+
+.easy2 .slick-list {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.easy2 .slick-list::after {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 100vw;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+}
+
+.easy2 .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  z-index: 2;
+}
+
+.easy2 .slick-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .easy__subtitle {
@@ -1236,76 +1321,6 @@ h6 {
   text-align: center;
   margin-top: 80px;
 }
-
-/* Слайдер */
-
-.slick-slider {
-  margin-bottom: 16px;
-}
-
-/* Ограничивающая оболочка */
-
-.slick-list {
-  position: relative;
-  overflow: hidden;
-  z-index: 2;
-}
-
-.slick-list::after {
-  content: "";
-  display: block;
-  height: 8px;
-  width: 100vw;
-  background-color: #fff;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  z-index: 1;
-}
-
-/* Лента слайдов */
-
-.slick-track {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  position: relative;
-  z-index: 2;
-}
-
-/* Слайд */
-
-.slick-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-/* Слайд активный */
-
-/* Слайд основной */
-
-/* Слайд по центру	 */
-
-/* Стрелка */
-
-/* Стрелка влево */
-
-/* Стрелка вправо */
-
-/* Стрелка не активна*/
-
-/* Точки */
 
 /* body {
   font-family: "DMSans", sans-serif;
@@ -2109,9 +2124,17 @@ body.lock {
     max-width: 190px;
   }
 
-  .carousel__inside {
+  .inside-cont {
+    padding: 0 !important;
+  }
+
+  .inside-slider {
     display: block;
     padding-bottom: 80px;
+  }
+
+  .inside-slider .slick-slide {
+    padding: 0 6px !important;
   }
 
   .inside {
