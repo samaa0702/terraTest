@@ -1390,14 +1390,14 @@ body.lock {
     max-width: 892px;
   }
 
-  .not-container {
+  #not-container {
     max-width: 100% !important;
     width: 100% !important;
     padding: 0 !important;
     margin: 0 !important;
   }
 
-  .not-container .row {
+  #not-container .row {
     margin: 0 !important;
   }
 
