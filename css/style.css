@@ -1390,17 +1390,6 @@ body.lock {
     max-width: 892px;
   }
 
-  #not-container {
-    max-width: 100% !important;
-    width: 100% !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-
-  #not-container .row {
-    margin: 0 !important;
-  }
-
   .bg-gray {
     padding-top: 80px;
   }
@@ -1953,6 +1942,17 @@ body.lock {
   .faq__card-header .btn-link span::after {
     border-width: 0 1px 1px 0;
     padding: 3px;
+  }
+
+  .not-container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .not-container .row {
+    margin: 0 !important;
   }
 
   .easy__title {
