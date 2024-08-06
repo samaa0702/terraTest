@@ -1391,14 +1391,14 @@ body.lock {
   }
 
   .not-container {
-    max-width: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
   .not-container .row {
-    margin: 0;
+    margin: 0 !important;
   }
 
   .bg-gray {
