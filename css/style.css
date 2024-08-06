@@ -660,12 +660,12 @@ h6 {
 }
 
 .inside__title {
-  margin-top: 80px;
+  margin-top: 120px;
   margin-bottom: 40px;
 }
 
 .inside {
-  padding-bottom: 80px;
+  padding-bottom: 120px;
 }
 
 .inside .effects__image {
@@ -1382,7 +1382,7 @@ body.lock {
   width: 100%;
   background-color: #f5f5f5;
   padding-top: 120px;
-  padding-bottom: 80px;
+  padding-bottom: 120px;
 }
 
 @media (min-width: 991.98px) {
@@ -1391,7 +1391,7 @@ body.lock {
   }
 
   .bg-gray {
-    padding-top: 80px;
+    padding-top: 120px;
   }
 }
 
@@ -1961,7 +1961,7 @@ body.lock {
   }
 
   .bg-gray {
-    padding-bottom: 40px !important;
+    padding-bottom: 80px !important;
   }
 
   .easy__title {
@@ -2134,6 +2134,10 @@ body.lock {
     margin-bottom: 8px;
     display: block;
     max-width: 190px;
+  }
+
+  .inside__title {
+    margin-top: 80px;
   }
 
   .inside-cont {
