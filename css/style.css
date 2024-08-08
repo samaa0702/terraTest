@@ -186,7 +186,6 @@ h6 {
 
 [class*=first-page__img] {
   position: absolute;
-  border-radius: 13px;
 }
 
 .first-page__img_1 {
@@ -1117,7 +1116,7 @@ h6 {
   }
 
   .first-page__link {
-    margin: 44px auto 0 0;
+    margin: 44px auto 0;
   }
 
   .first-page__btn {
@@ -1128,7 +1127,7 @@ h6 {
 
 @media (max-width: 499.98px) {
   .first-page__img_3 {
-    bottom: 40%;
+    bottom: 42%;
   }
 
   .solutions {
@@ -1146,6 +1145,12 @@ h6 {
 
   .solutions__image {
     right: 7px;
+  }
+}
+
+@media (max-width: 455.98px) {
+  .first-page__img_3 {
+    bottom: 40%;
   }
 }
 
