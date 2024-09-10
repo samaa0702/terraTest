@@ -214,6 +214,7 @@ p.stickyColor span.newColor {
   padding: 8px 32px 12px;
   border: 2px solid #ffffff;
   border-radius: 110px;
+  min-height: 72px;
 }
 
 .fs-bold {
@@ -1019,6 +1020,7 @@ p.stickyColor span.newColor {
 
   .fs-it {
     padding: 2px 24px;
+    min-height: 40px;
   }
 
   .first-page__link {
