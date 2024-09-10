@@ -224,33 +224,6 @@ p.stickyColor span.newColor {
   display: none;
 }
 
-@-webkit-keyframes changeText {
-  0%, 100% {
-    content: "IT решения";
-  }
-
-  50% {
-    content: "ИИ решения";
-  }
-}
-
-@keyframes changeText {
-  0%, 100% {
-    content: "IT решения";
-  }
-
-  50% {
-    content: "ИИ решения";
-  }
-}
-
-.fs-it::after {
-  display: block;
-  content: "IT решения";
-  -webkit-animation: changeText 4s infinite;
-          animation: changeText 4s infinite;
-}
-
 .first-page__link {
   display: block;
   border-radius: 1000px;
@@ -868,7 +841,7 @@ p.stickyColor span.newColor {
   bottom: 0;
   left: 0;
   background-color: #fff;
-  border-radius: 16px 16px 0 0;
+  border-radius: 16px;
   padding: 20px 24px 24px;
   width: 100%;
 }
@@ -917,6 +890,10 @@ p.stickyColor span.newColor {
 
 .bg-gray {
   overflow: hidden;
+}
+
+.row {
+  margin: 0 auto !important;
 }
 
 .bg-black {
@@ -1123,7 +1100,7 @@ p.stickyColor span.newColor {
   }
 
   .solutions-grid-gradient {
-    left: 247px;
+    left: 237px;
   }
 
   .solutions-grid-text {
@@ -1410,7 +1387,7 @@ p.stickyColor span.newColor {
   }
 
   .solutions-grid-img-r {
-    right: -92px;
+    right: -108px;
   }
 
   .found__item {
@@ -1852,15 +1829,15 @@ p.stickyColor span.newColor {
   .media-item:first-child {
     -ms-grid-column: 1;
         grid-column-start: 1;
-    -ms-grid-column-span: 2;
-    grid-column-end: 3;
+    -ms-grid-column-span: 1;
+    grid-column-end: 2;
   }
 
   .media-item:last-child {
     -ms-grid-column: 1;
         grid-column-start: 1;
-    -ms-grid-column-span: 2;
-    grid-column-end: 3;
+    -ms-grid-column-span: 1;
+    grid-column-end: 2;
   }
 
   #cursor {
@@ -1871,6 +1848,10 @@ p.stickyColor span.newColor {
 @media (max-width: 449.98px) {
   .br-pac {
     display: block;
+  }
+
+  .fs-info {
+    margin-top: 30vh;
   }
 }
 
