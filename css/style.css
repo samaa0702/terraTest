@@ -1192,7 +1192,7 @@ body {
 }
 
 .mt-48 {
-  margin-top: 48px;
+  margin-top: 48px !important;
 }
 
 .ibg {

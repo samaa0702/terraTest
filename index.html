@@ -1,588 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css?_v=20240915140444"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Unbounded:wght@200..900&display=swap&_v=20240915140444"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240915140444"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.min.css?_v=20240915140444" />
-    <title>Главная</title>
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css?_v=20240915181421"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Unbounded:wght@200..900&display=swap&_v=20240915181421"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240915181421"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.min.css?_v=20240915181421" />
+  <title>Главная</title>
+</head>
 
   <body>
     <div id="cursor"></div>
     <div class="first-screen">
-      <div class="fs-head">
-        <div class="container fs-head-container">
-          <p>
-            Создаем <span class="fs-pacific"><br class="br-pac" />гибкие</span
-            ><br />
-            <span class="fs-it-container"
-              ><span class="fs-it"
-                ><span
-                  class="txt-rotate"
-                  data-period="2000"
-                  data-rotate='[ "ИИ решения", "IT решения" ]'
-                ></span
-              ></span>
-            </span>
-            <br class="br-pac" />
-            под задачи
-            <span class="fs-bold"><br class="br-your" />вашего</span> бизнеса
-          </p>
-          <span class="first-page__link">
-            <button type="button" class="first-page__btn">
-              <p class="first-page__btn-text">ОБСУДИТЬ ПРОЕКТ</p>
-              <span class="first-page__btn-span"
-                ><img
-                  class="first-page__btn-icon"
-                  src="/img/arrow.svg"
-                  alt="arrow"
-              /></span>
-            </button>
-          </span>
-        </div>
-      </div>
-      <div class="animation-fon">
-        <svg class="hidden">
-          <defs>
-            <filter id="blurMe">
-              <feGaussianBlur
-                in="SourceGraphic"
-                stdDeviation="10"
-                result="blur"
-              ></feGaussianBlur>
-              <feColorMatrix
-                in="blur"
-                mode="matrix"
-                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-                result="goo"
-              ></feColorMatrix>
-              <feBlend in="SourceGraphic" in2="goo"></feBlend>
-            </filter>
-          </defs>
-        </svg>
-        <div class="gradients-container">
-          <div class="gradient-one"></div>
-          <div class="gradient-two"></div>
-          <div class="gradient-three"></div>
-          <div class="gradient-four"></div>
-          <div class="gradient-five"></div>
-          <div class="gradient-six"></div>
-        </div>
-      </div>
-      <div class="fs-info">
-        <div class="container">
-          <p class="stickyColor">
-            ТерраЛинк Разработка - российская компания, с экспертизой в заказной
-            разработке ИТ-решений.
-          </p>
-          <p class="stickyColor">
-            Мы специализируемся на создании продуктов с искусственным
-            интеллектом, мобильных приложений, корпоративных порталов. Так же
-            поставляем технологические решения для клиентов в любых отраслях.
-          </p>
-          <div class="fs-info-badges">
-            <span class="fs-badge">ТЭК</span><span class="fs-badge">Ритейл</span
-            ><span class="fs-badge">Производство</span
-            ><span class="fs-badge">Металлургия</span
-            ><span class="fs-badge">Финансы</span
-            ><span class="fs-badge">Развлечения</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <h2 class="effects__title">Наши решения</h2>
-      <div class="row solutions">
-        <div class="solutions-grid">
-          <div class="solutions-grid-item item first-item">
-            <p class="solutions-grid-text">Решения<br />на основе ИИ</p>
-            <picture
-              ><source srcset="/img/solutions1.webp" type="image/webp" />
-              <img
-                src="/img/solutions1.png"
-                alt="img"
-                class="solutions-grid-img-r"
-            /></picture>
-            <img
-              src="/img/solutions11.png"
-              alt="img"
-              class="solutions-grid-img-r solutions-grid-gradient"
-            />
-          </div>
-          <div class="solutions-grid-item item">
-            <p class="solutions-grid-text">
-              Корпоративный<br />мобильный портал
-            </p>
-            <picture
-              ><source srcset="/img/solutions2.webp" type="image/webp" />
-              <img
-                src="/img/solutions2.png"
-                alt="img"
-                class="solutions-grid-img"
-            /></picture>
-          </div>
-          <div class="solutions-grid-item item">
-            <p class="solutions-grid-text">
-              ECM Mobile - <br class="br-mob" />для управления
-              <br class="br-mob1" />корпоративным контентом
-            </p>
-            <picture
-              ><source srcset="/img/solutions3.webp" type="image/webp" />
-              <img
-                src="/img/solutions3.png"
-                alt="img"
-                class="solutions-grid-img"
-            /></picture>
-          </div>
-          <div class="solutions-grid-item item">
-            <p class="solutions-grid-text">Точка подбора</p>
-            <picture
-              ><source srcset="/img/solutions4.webp" type="image/webp" />
-              <img
-                src="/img/solutions4.png"
-                alt="img"
-                class="solutions-grid-img"
-            /></picture>
-          </div>
-          <div class="solutions-grid-item item">
-            <p class="solutions-grid-text">
-              Мобильное ТОРО <br class="br-mob2" />(ТОИР)
-            </p>
-            <picture
-              ><source srcset="/img/solutions5.webp" type="image/webp" />
-              <img
-                src="/img/solutions5.png"
-                alt="img"
-                class="solutions-grid-img"
-            /></picture>
-          </div>
-          <div class="solutions-grid-item item">
-            <p class="solutions-grid-text">СпортМодуль</p>
-            <picture
-              ><source srcset="/img/solutions6.webp" type="image/webp" />
-              <img
-                src="/img/solutions6.png"
-                alt="img"
-                class="solutions-grid-img"
-            /></picture>
-          </div>
-        </div>
-      </div>
-      <h2 class="effects__title">
-        Если вы не нашли подходящие решение,<br />
-        то наша экспертиза на этом не<br class="effects-br-2" />
-        заканчивается
-        <span class="effects__subtitle">
-          Мы можем помочь с разными задачами и любыми проектами
+  <div class="fs-head">
+    <div class="container fs-head-container">
+      <p>
+        Создаем <span class="fs-pacific"><br class="br-pac" />гибкие</span
+        ><br />
+        <span class="fs-it-container"
+          ><span class="fs-it"
+            ><span
+              class="txt-rotate"
+              data-period="2000"
+              data-rotate='[ "ИИ решения", "IT решения" ]'
+            ></span
+          ></span>
         </span>
-      </h2>
+        <br class="br-pac" />
+        под задачи
+        <span class="fs-bold"><br class="br-your" />вашего</span> бизнеса
+      </p>
+      <span class="first-page__link">
+        <button type="button" class="first-page__btn">
+          <p class="first-page__btn-text">ОБСУДИТЬ ПРОЕКТ</p>
+          <span class="first-page__btn-span"
+            ><img class="first-page__btn-icon" src="/img/arrow.svg" alt="arrow"
+          /></span>
+        </button>
+      </span>
+    </div>
+  </div>
+  <div class="animation-fon">
+    <svg class="hidden">
+      <defs>
+        <filter id="blurMe">
+          <feGaussianBlur
+            in="SourceGraphic"
+            stdDeviation="10"
+            result="blur"
+          ></feGaussianBlur>
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+            result="goo"
+          ></feColorMatrix>
+          <feBlend in="SourceGraphic" in2="goo"></feBlend>
+        </filter>
+      </defs>
+    </svg>
+    <div class="gradients-container">
+      <div class="gradient-one"></div>
+      <div class="gradient-two"></div>
+      <div class="gradient-three"></div>
+      <div class="gradient-four"></div>
+      <div class="gradient-five"></div>
+      <div class="gradient-six"></div>
+    </div>
+  </div>
+  <div class="fs-info">
+    <div class="container">
+      <p class="stickyColor">
+        ТерраЛинк Разработка - российская компания, с экспертизой в заказной
+        разработке ИТ-решений.
+      </p>
+      <p class="stickyColor">
+        Мы специализируемся на создании продуктов с искусственным интеллектом,
+        мобильных приложений, корпоративных порталов. Так же поставляем
+        технологические решения для клиентов в любых отраслях.
+      </p>
+      <div class="fs-info-badges">
+        <span class="fs-badge">ТЭК</span><span class="fs-badge">Ритейл</span
+        ><span class="fs-badge">Производство</span
+        ><span class="fs-badge">Металлургия</span
+        ><span class="fs-badge">Финансы</span
+        ><span class="fs-badge">Развлечения</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2 class="effects__title">Наши решения</h2>
+  <div class="row solutions">
+    <div class="solutions-grid">
+      <div class="solutions-grid-item item first-item">
+        <p class="solutions-grid-text">Решения<br />на основе ИИ</p>
+        <picture><source srcset="/img/solutions1.webp" type="image/webp"><img src="/img/solutions1.png" alt="img" class="solutions-grid-img-r" /></picture>
+        <img
+          src="/img/solutions11.png"
+          alt="img"
+          class="solutions-grid-img-r solutions-grid-gradient"
+        />
+      </div>
+      <div class="solutions-grid-item item">
+        <p class="solutions-grid-text">Корпоративный<br />мобильный портал</p>
+        <picture><source srcset="/img/solutions2.webp" type="image/webp"><img src="/img/solutions2.png" alt="img" class="solutions-grid-img" /></picture>
+      </div>
+      <div class="solutions-grid-item item">
+        <p class="solutions-grid-text">
+          ECM Mobile - <br class="br-mob" />для управления
+          <br class="br-mob1" />корпоративным контентом
+        </p>
+        <picture><source srcset="/img/solutions3.webp" type="image/webp"><img src="/img/solutions3.png" alt="img" class="solutions-grid-img" /></picture>
+      </div>
+      <div class="solutions-grid-item item">
+        <p class="solutions-grid-text">Точка подбора</p>
+        <picture><source srcset="/img/solutions4.webp" type="image/webp"><img src="/img/solutions4.png" alt="img" class="solutions-grid-img" /></picture>
+      </div>
+      <div class="solutions-grid-item item">
+        <p class="solutions-grid-text">
+          Мобильное ТОРО <br class="br-mob2" />(ТОИР)
+        </p>
+        <picture><source srcset="/img/solutions5.webp" type="image/webp"><img src="/img/solutions5.png" alt="img" class="solutions-grid-img" /></picture>
+      </div>
+      <div class="solutions-grid-item item">
+        <p class="solutions-grid-text">СпортМодуль</p>
+        <picture><source srcset="/img/solutions6.webp" type="image/webp"><img src="/img/solutions6.png" alt="img" class="solutions-grid-img" /></picture>
+      </div>
+    </div>
+  </div>
+  <h2 class="effects__title">
+    Если вы не нашли подходящие решение,<br />
+    то наша экспертиза на этом не<br class="effects-br-2" />
+    заканчивается
+    <span class="effects__subtitle">
+      Мы можем помочь с разными задачами и любыми проектами
+    </span>
+  </h2>
 
-      <div class="row found">
-        <div class="found__col">
-          <div class="found__item item">
-            <img class="found__image" src="/img/found1.svg" alt="wallet" />
-            <p class="found__item-title">Разработка решений на базе ИИ</p>
-            <p class="found__item-text">
-              Технологии будущего для улучшения производительности и снижения
-              издержек крупного бизнеса.
+  <div class="row found">
+    <div class="found__col">
+      <div class="found__item item">
+        <img class="found__image" src="/img/found1.svg" alt="wallet" />
+        <p class="found__item-title">Разработка решений на базе ИИ</p>
+        <p class="found__item-text">
+          Технологии будущего для улучшения производительности и снижения
+          издержек крупного бизнеса.
+        </p>
+      </div>
+    </div>
+    <div class="found__col">
+      <div class="found__item item">
+        <img class="found__image" src="/img/found2.svg" alt="wallet" />
+        <p class="found__item-title">Сервисы разработки ПО</p>
+        <p class="found__item-text">
+          Создаем мультиплатформенные ИТ-решения учитывая задачи вашего бизнеса.
+          Начинаем с концепции и заканчиваем готовым продуктом.
+        </p>
+      </div>
+    </div>
+    <div class="found__col">
+      <div class="found__item item">
+        <img class="found__image" src="/img/found3.svg" alt="wallet" />
+        <p class="found__item-title">UX-аудит и дизайн</p>
+        <p class="found__item-text">
+          Проектируем решения с учетом ваших задач и требований. Проводим
+          UX-исследование любых мобильных и web-приложений.
+        </p>
+      </div>
+    </div>
+    <div class="found__col">
+      <div class="found__item item">
+        <img class="found__image" src="/img/found4.svg" alt="wallet" />
+        <img
+          class="found__image found__svg"
+          src="/img/found5.svg"
+          alt="wallet"
+        />
+        <p class="found__item-title">Внедрение 1С</p>
+        <p class="found__item-text">
+          Делаем вашу работу удобной и легко адаптируемой к современным условиям
+          бизнеса
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-black">
+  <div class="container">
+    <h2 class="benefits-title">
+      Наши клиенты<br />
+      выбирают нас за
+    </h2>
+    <div class="benefits">
+      <div class="benefits__info">
+        <div class="benefits__column1">
+          <div class="benefits__item">
+            <p class="benefits__huge-text">ИИ<span class="w-300">-лаб</span></p>
+            <p class="benefits__text">
+              собственный отдел по разработке ИИ-продуктов
+            </p>
+          </div>
+          <div class="benefits__item">
+            <p class="benefits__huge-text">6</p>
+            <p class="benefits__text">продуктов собственной разработки</p>
+          </div>
+          <div class="benefits__item">
+            <p class="benefits__huge-text">300<span class="plus">+</span></p>
+            <p class="benefits__text">
+              сертифицированных экспертов технического и функционального
+              направления
             </p>
           </div>
         </div>
-        <div class="found__col">
-          <div class="found__item item">
-            <img class="found__image" src="/img/found2.svg" alt="wallet" />
-            <p class="found__item-title">Сервисы разработки ПО</p>
-            <p class="found__item-text">
-              Создаем мультиплатформенные ИТ-решения учитывая задачи вашего
-              бизнеса. Начинаем с концепции и заканчиваем готовым продуктом.
+        <div class="benefits__column2">
+          <div class="benefits__list-item">
+            <p class="benefits__subtitle-text">Работу на результат</p>
+            <p class="benefits__text">
+              Фокусируем внимание на задачах вашего бизнеса и предлагаем
+              максимально подходящее готовое решение или разрабатываем новое
             </p>
           </div>
-        </div>
-        <div class="found__col">
-          <div class="found__item item">
-            <img class="found__image" src="/img/found3.svg" alt="wallet" />
-            <p class="found__item-title">UX-аудит и дизайн</p>
-            <p class="found__item-text">
-              Проектируем решения с учетом ваших задач и требований. Проводим
-              UX-исследование любых мобильных и web-приложений.
+          <div class="benefits__list-item">
+            <p class="benefits__subtitle-text">Безопасность</p>
+            <p class="benefits__text">
+              Мы гарантируем, что наши решения будут защищены от киберугроз в
+              соответствии с требованиями регуляторов в сфере информационной
+              безопасности
             </p>
           </div>
-        </div>
-        <div class="found__col">
-          <div class="found__item item">
-            <img class="found__image" src="/img/found4.svg" alt="wallet" />
-            <img
-              class="found__image found__svg"
-              src="/img/found5.svg"
-              alt="wallet"
-            />
-            <p class="found__item-title">Внедрение 1С</p>
-            <p class="found__item-text">
-              Делаем вашу работу удобной и легко адаптируемой к современным
-              условиям бизнеса
+          <div class="benefits__list-item">
+            <p class="benefits__subtitle-text">Поддержку</p>
+            <p class="benefits__text">
+              Оказываем техническую поддержку и даем гарантию на все наши
+              разработки
+            </p>
+          </div>
+          <div class="benefits__list-item">
+            <p class="benefits__subtitle-text">Технологии</p>
+            <p class="benefits__text">
+              Используем в наших решениях аналитику данных, ИИ и популярные
+              стеки технологий, чтобы создавать эффективные решения
             </p>
           </div>
         </div>
       </div>
+      <div class="benefits__icons">
+        <img src="/img/Vector.svg" alt="vector" class="benefits__icon" />
+        <img src="/img/Vector-1.svg" alt="vector" class="benefits__icon" />
+        <img src="/img/Vector-2.svg" alt="vector" class="benefits__icon" />
+
+        <img src="/img/Vector-3.svg" alt="vector" class="benefits__icon" />
+        <img src="/img/Vector-4.svg" alt="vector" class="benefits__icon" />
+        <img src="/img/Vector-5.svg" alt="vector" class="benefits__icon" />
+
+        <img src="/img/Vector-6.svg" alt="vector" class="benefits__icon" />
+        <img src="/img/Vector-7.svg" alt="vector" class="benefits__icon" />
+        <img src="/img/Vector-8.svg" alt="vector" class="benefits__icon" />
+      </div>
+      <div class="form-block">
+        <p class="form-text">Предлагаем обсудить ваш проект</p>
+        <img class="form-img" src="/img/form.svg" alt="chatting" />
+        <div class="form-btn"><span>Начать общение</span></div>
+      </div>
     </div>
-    <div class="bg-black">
-      <div class="container">
-        <h2 class="benefits-title">
-          Наши клиенты<br />
-          выбирают нас за
-        </h2>
-        <div class="benefits">
-          <div class="benefits__info">
-            <div class="benefits__column1">
-              <div class="benefits__item">
-                <p class="benefits__huge-text">
-                  ИИ<span class="w-300">-лаб</span>
-                </p>
-                <p class="benefits__text">
-                  собственный отдел по разработке ИИ-продуктов
-                </p>
-              </div>
-              <div class="benefits__item">
-                <p class="benefits__huge-text">6</p>
-                <p class="benefits__text">продуктов собственной разработки</p>
-              </div>
-              <div class="benefits__item">
-                <p class="benefits__huge-text">
-                  300<span class="plus">+</span>
-                </p>
-                <p class="benefits__text">
-                  сертифицированных экспертов технического и функционального
-                  направления
-                </p>
-              </div>
-            </div>
-            <div class="benefits__column2">
-              <div class="benefits__list-item">
-                <p class="benefits__subtitle-text">Работу на результат</p>
-                <p class="benefits__text">
-                  Фокусируем внимание на задачах вашего бизнеса и предлагаем
-                  максимально подходящее готовое решение или разрабатываем новое
-                </p>
-              </div>
-              <div class="benefits__list-item">
-                <p class="benefits__subtitle-text">Безопасность</p>
-                <p class="benefits__text">
-                  Мы гарантируем, что наши решения будут защищены от киберугроз
-                  в соответствии с требованиями регуляторов в сфере
-                  информационной безопасности
-                </p>
-              </div>
-              <div class="benefits__list-item">
-                <p class="benefits__subtitle-text">Поддержку</p>
-                <p class="benefits__text">
-                  Оказываем техническую поддержку и даем гарантию на все наши
-                  разработки
-                </p>
-              </div>
-              <div class="benefits__list-item">
-                <p class="benefits__subtitle-text">Технологии</p>
-                <p class="benefits__text">
-                  Используем в наших решениях аналитику данных, ИИ и популярные
-                  стеки технологий, чтобы создавать эффективные решения
-                </p>
-              </div>
-            </div>
+  </div>
+</div>
+<div class="oh">
+  <div class="container">
+    <div class="effects__header">
+      <h2 class="effects__header-title">Мы постоянно изучаем рынок</h2>
+      <p class="effects__header-subtitle">Посмотрите наш блог</p>
+    </div>
+    <div class="row effects__row row-first block">
+      <div class="my-slider">
+        <div class="slider-item item">
+          <div class="slider-item-badge">Исследования</div>
+          <p class="slider-item-title">
+            Зачем компаниям и сотрудникам мобильные корпоративные порталы?
+          </p>
+          <p class="slider-item-text">
+            Вы остаетесь в правовом поле РФ. Платформа учитывает все новейшие
+            требования российского законодательства
+          </p>
+          <div class="slider-item-digits">
+            <span><img src="/img/dates.svg" alt="dates" />18.05.2023</span>
+            <span><img src="/img/eye.svg" alt="dates" />223</span>
+            <span><img src="/img/clock.svg" alt="dates" />~ 5 мин</span>
           </div>
-          <div class="benefits__icons">
-            <img src="/img/Vector.svg" alt="vector" class="benefits__icon" />
-            <img src="/img/Vector-1.svg" alt="vector" class="benefits__icon" />
-            <img src="/img/Vector-2.svg" alt="vector" class="benefits__icon" />
-
-            <img src="/img/Vector-3.svg" alt="vector" class="benefits__icon" />
-            <img src="/img/Vector-4.svg" alt="vector" class="benefits__icon" />
-            <img src="/img/Vector-5.svg" alt="vector" class="benefits__icon" />
-
-            <img src="/img/Vector-6.svg" alt="vector" class="benefits__icon" />
-            <img src="/img/Vector-7.svg" alt="vector" class="benefits__icon" />
-            <img src="/img/Vector-8.svg" alt="vector" class="benefits__icon" />
+          <picture><source srcset="/img/slider.webp" type="image/webp"><img class="slider-item-image" src="/img/slider.png" alt="phone" /></picture>
+        </div>
+        <div class="slider-item item">
+          <div class="slider-item-badge">Исследования</div>
+          <p class="slider-item-title">
+            Зачем компаниям и сотрудникам мобильные корпоративные порталы?
+          </p>
+          <p class="slider-item-text">
+            Вы остаетесь в правовом поле РФ. Платформа учитывает все новейшие
+            требования российского законодательства
+          </p>
+          <div class="slider-item-digits">
+            <span><img src="/img/dates.svg" alt="dates" />18.05.2023</span>
+            <span><img src="/img/eye.svg" alt="dates" />223</span>
+            <span><img src="/img/clock.svg" alt="dates" />~ 5 мин</span>
           </div>
-          <div class="form-block">
-            <p class="form-text">Предлагаем обсудить ваш проект</p>
-            <img class="form-img" src="/img/form.svg" alt="chatting" />
-            <div class="form-btn"><span>Начать общение</span></div>
+          <picture><source srcset="/img/slider.webp" type="image/webp"><img class="slider-item-image" src="/img/slider.png" alt="phone" /></picture>
+        </div>
+        <div class="slider-item item">
+          <div class="slider-item-badge">Исследования</div>
+          <p class="slider-item-title">
+            Зачем компаниям и сотрудникам мобильные корпоративные порталы?
+          </p>
+          <p class="slider-item-text">
+            Вы остаетесь в правовом поле РФ. Платформа учитывает все новейшие
+            требования российского законодательства
+          </p>
+          <div class="slider-item-digits">
+            <span><img src="/img/dates.svg" alt="dates" />18.05.2023</span>
+            <span><img src="/img/eye.svg" alt="dates" />223</span>
+            <span><img src="/img/clock.svg" alt="dates" />~ 5 мин</span>
           </div>
+          <picture><source srcset="/img/slider.webp" type="image/webp"><img class="slider-item-image" src="/img/slider.png" alt="phone" /></picture>
+        </div>
+        <div class="slider-item item">
+          <div class="slider-item-badge">Исследования</div>
+          <p class="slider-item-title">
+            Зачем компаниям и сотрудникам мобильные корпоративные порталы?
+          </p>
+          <p class="slider-item-text">
+            Вы остаетесь в правовом поле РФ. Платформа учитывает все новейшие
+            требования российского законодательства
+          </p>
+          <div class="slider-item-digits">
+            <span><img src="/img/dates.svg" alt="dates" />18.05.2023</span>
+            <span><img src="/img/eye.svg" alt="dates" />223</span>
+            <span><img src="/img/clock.svg" alt="dates" />~ 5 мин</span>
+          </div>
+          <picture><source srcset="/img/slider.webp" type="image/webp"><img class="slider-item-image" src="/img/slider.png" alt="phone" /></picture>
+        </div>
+        <div class="slider-item item">
+          <div class="slider-item-badge">Исследования</div>
+          <p class="slider-item-title">
+            Зачем компаниям и сотрудникам мобильные корпоративные порталы?
+          </p>
+          <p class="slider-item-text">
+            Вы остаетесь в правовом поле РФ. Платформа учитывает все новейшие
+            требования российского законодательства
+          </p>
+          <div class="slider-item-digits">
+            <span><img src="/img/dates.svg" alt="dates" />18.05.2023</span>
+            <span><img src="/img/eye.svg" alt="dates" />223</span>
+            <span><img src="/img/clock.svg" alt="dates" />~ 5 мин</span>
+          </div>
+          <picture><source srcset="/img/slider.webp" type="image/webp"><img class="slider-item-image" src="/img/slider.png" alt="phone" /></picture>
+        </div>
+        <div class="slider-item item">
+          <div class="slider-item-badge">Исследования</div>
+          <p class="slider-item-title">
+            Зачем компаниям и сотрудникам мобильные корпоративные порталы?
+          </p>
+          <p class="slider-item-text">
+            Вы остаетесь в правовом поле РФ. Платформа учитывает все новейшие
+            требования российского законодательства
+          </p>
+          <div class="slider-item-digits">
+            <span><img src="/img/dates.svg" alt="dates" />18.05.2023</span>
+            <span><img src="/img/eye.svg" alt="dates" />223</span>
+            <span><img src="/img/clock.svg" alt="dates" />~ 5 мин</span>
+          </div>
+          <picture><source srcset="/img/slider.webp" type="image/webp"><img class="slider-item-image" src="/img/slider.png" alt="phone" /></picture>
+        </div>
+      </div>
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js?_v=20240915181421"></script>
+      <lottie-player
+        src="https://lottie.host/e14081e8-bd7b-4e38-bb85-efd3dbe4ea4c/TMXWdVp3mI.json"
+        class="lottie"
+        background="transparent"
+        speed="1"
+        style="width: 44px; height: 48px; margin: 0 auto"
+        direction="1"
+        mode="normal"
+        loop
+        autoplay
+      ></lottie-player>
+    </div>
+    <div class="article-btn">
+      <p>Все статьи</p>
+      <img src="/img/arrow.svg" alt="arrow" />
+    </div>
+  </div>
+</div>
+<div class="bg-gray">
+  <div class="container">
+    <h2 class="effects__header-title">Медиацентр</h2>
+    <div class="media">
+      <div class="media-item ibg item">
+        <picture><source srcset="/img/media1.webp" type="image/webp"><img src="/img/media1.png" alt="mediaImg" /></picture>
+        <div class="media-text-block">
+          <p class="media-text">
+            Как правильно внедрять ЭДО? ТерраЛинк на Форуме ЭДО 2024 Практика
+          </p>
+          <span class="media-date">18.05.2023</span>
+        </div>
+      </div>
+      <div class="media-item ibg item">
+        <picture><source srcset="/img/media2.webp" type="image/webp"><img src="/img/media2.png" alt="mediaImg" /></picture>
+        <div class="media-text-block">
+          <p class="media-text">
+            Компания ТерраЛинк заняла 6-ое место в рейтинге интеграторов по
+            налоговому мониторингу
+          </p>
+          <span class="media-date">18.05.2023</span>
+        </div>
+      </div>
+      <div class="media-item item ibg">
+        <picture><source srcset="/img/media3.webp" type="image/webp"><img src="/img/media3.png" alt="mediaImg" /></picture>
+        <div class="media-text-block">
+          <p class="media-text">“Галактика Quantum.ERP” на замену SAP</p>
+          <span class="media-date">18.05.2023</span>
+        </div>
+      </div>
+      <div class="media-item ibg item">
+        <picture><source srcset="/img/media4.webp" type="image/webp"><img src="/img/media4.png" alt="mediaImg" /></picture>
+        <div class="media-text-block">
+          <p class="media-text">
+            Компания ТерраЛинк представлена в 3 областях «Карты российского
+            рынка информационных технологий» за 2024 год 18.05.2023
+          </p>
+          <span class="media-date">18.05.2023</span>
+        </div>
+      </div>
+      <div class="media-item ibg item">
+        <picture><source srcset="/img/media5.webp" type="image/webp"><img src="/img/media5.png" alt="mediaImg" /></picture>
+        <div class="media-text-block">
+          <p class="media-text">
+            ТерраЛинк принял участие в TAdviser SummIT 2024
+          </p>
+          <span class="media-date">18.05.2023</span>
+        </div>
+      </div>
+      <div class="media-item ibg item">
+        <picture><source srcset="/img/media6.webp" type="image/webp"><img src="/img/media6.png" alt="mediaImg" /></picture>
+        <div class="media-text-block">
+          <p class="media-text">
+            Компания ТерраЛинк представлена в 3 областях «Карты российского
+            рынка информационных технологий» за 2024 год
+          </p>
+          <span class="media-date">18.05.2023</span>
         </div>
       </div>
     </div>
-    <div class="oh">
-      <div class="container">
-        <div class="effects__header">
-          <h2 class="effects__header-title">Мы постоянно изучаем рынок</h2>
-          <p class="effects__header-subtitle">Посмотрите наш блог</p>
-        </div>
-        <div class="row effects__row row-first block">
-          <div class="my-slider">
-            <div class="slider-item item">
-              <div class="slider-item-badge">Исследования</div>
-              <p class="slider-item-title">
-                Зачем компаниям и сотрудникам мобильные корпоративные порталы?
-              </p>
-              <p class="slider-item-text">
-                Вы остаетесь в правовом поле РФ. Платформа учитывает все
-                новейшие требования российского законодательства
-              </p>
-              <div class="slider-item-digits">
-                <span><img src="/img/dates.svg" alt="dates" />18.05.2023</span>
-                <span><img src="/img/eye.svg" alt="dates" />223</span>
-                <span><img src="/img/clock.svg" alt="dates" />~ 5 мин</span>
-              </div>
-              <picture
-                ><source srcset="/img/slider.webp" type="image/webp" />
-                <img
-                  class="slider-item-image"
-                  src="/img/slider.png"
-                  alt="phone"
-              /></picture>
-            </div>
-            <div class="slider-item item">
-              <div class="slider-item-badge">Исследования</div>
-              <p class="slider-item-title">
-                Зачем компаниям и сотрудникам мобильные корпоративные порталы?
-              </p>
-              <p class="slider-item-text">
-                Вы остаетесь в правовом поле РФ. Платформа учитывает все
-                новейшие требования российского законодательства
-              </p>
-              <div class="slider-item-digits">
-                <span><img src="/img/dates.svg" alt="dates" />18.05.2023</span>
-                <span><img src="/img/eye.svg" alt="dates" />223</span>
-                <span><img src="/img/clock.svg" alt="dates" />~ 5 мин</span>
-              </div>
-              <picture
-                ><source srcset="/img/slider.webp" type="image/webp" />
-                <img
-                  class="slider-item-image"
-                  src="/img/slider.png"
-                  alt="phone"
-              /></picture>
-            </div>
-            <div class="slider-item item">
-              <div class="slider-item-badge">Исследования</div>
-              <p class="slider-item-title">
-                Зачем компаниям и сотрудникам мобильные корпоративные порталы?
-              </p>
-              <p class="slider-item-text">
-                Вы остаетесь в правовом поле РФ. Платформа учитывает все
-                новейшие требования российского законодательства
-              </p>
-              <div class="slider-item-digits">
-                <span><img src="/img/dates.svg" alt="dates" />18.05.2023</span>
-                <span><img src="/img/eye.svg" alt="dates" />223</span>
-                <span><img src="/img/clock.svg" alt="dates" />~ 5 мин</span>
-              </div>
-              <picture
-                ><source srcset="/img/slider.webp" type="image/webp" />
-                <img
-                  class="slider-item-image"
-                  src="/img/slider.png"
-                  alt="phone"
-              /></picture>
-            </div>
-            <div class="slider-item item">
-              <div class="slider-item-badge">Исследования</div>
-              <p class="slider-item-title">
-                Зачем компаниям и сотрудникам мобильные корпоративные порталы?
-              </p>
-              <p class="slider-item-text">
-                Вы остаетесь в правовом поле РФ. Платформа учитывает все
-                новейшие требования российского законодательства
-              </p>
-              <div class="slider-item-digits">
-                <span><img src="/img/dates.svg" alt="dates" />18.05.2023</span>
-                <span><img src="/img/eye.svg" alt="dates" />223</span>
-                <span><img src="/img/clock.svg" alt="dates" />~ 5 мин</span>
-              </div>
-              <picture
-                ><source srcset="/img/slider.webp" type="image/webp" />
-                <img
-                  class="slider-item-image"
-                  src="/img/slider.png"
-                  alt="phone"
-              /></picture>
-            </div>
-            <div class="slider-item item">
-              <div class="slider-item-badge">Исследования</div>
-              <p class="slider-item-title">
-                Зачем компаниям и сотрудникам мобильные корпоративные порталы?
-              </p>
-              <p class="slider-item-text">
-                Вы остаетесь в правовом поле РФ. Платформа учитывает все
-                новейшие требования российского законодательства
-              </p>
-              <div class="slider-item-digits">
-                <span><img src="/img/dates.svg" alt="dates" />18.05.2023</span>
-                <span><img src="/img/eye.svg" alt="dates" />223</span>
-                <span><img src="/img/clock.svg" alt="dates" />~ 5 мин</span>
-              </div>
-              <picture
-                ><source srcset="/img/slider.webp" type="image/webp" />
-                <img
-                  class="slider-item-image"
-                  src="/img/slider.png"
-                  alt="phone"
-              /></picture>
-            </div>
-            <div class="slider-item item">
-              <div class="slider-item-badge">Исследования</div>
-              <p class="slider-item-title">
-                Зачем компаниям и сотрудникам мобильные корпоративные порталы?
-              </p>
-              <p class="slider-item-text">
-                Вы остаетесь в правовом поле РФ. Платформа учитывает все
-                новейшие требования российского законодательства
-              </p>
-              <div class="slider-item-digits">
-                <span><img src="/img/dates.svg" alt="dates" />18.05.2023</span>
-                <span><img src="/img/eye.svg" alt="dates" />223</span>
-                <span><img src="/img/clock.svg" alt="dates" />~ 5 мин</span>
-              </div>
-              <picture
-                ><source srcset="/img/slider.webp" type="image/webp" />
-                <img
-                  class="slider-item-image"
-                  src="/img/slider.png"
-                  alt="phone"
-              /></picture>
-            </div>
-          </div>
-          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js?_v=20240915140444"></script>
-          <lottie-player
-            src="https://lottie.host/e14081e8-bd7b-4e38-bb85-efd3dbe4ea4c/TMXWdVp3mI.json"
-            class="lottie"
-            background="transparent"
-            speed="1"
-            style="width: 44px; height: 48px; margin: 0 auto"
-            direction="1"
-            mode="normal"
-            loop
-            autoplay
-          ></lottie-player>
-        </div>
-        <div class="article-btn">
-          <p>Все статьи</p>
-          <img src="/img/arrow.svg" alt="arrow" />
-        </div>
-      </div>
+    <div class="article-btn m-0-auto">
+      <p>Все новости</p>
+      <img src="/img/arrow.svg" alt="arrow" />
     </div>
-    <div class="bg-gray">
-      <div class="container">
-        <h2 class="effects__header-title">Медиацентр</h2>
-        <div class="media">
-          <div class="media-item ibg item">
-            <picture
-              ><source srcset="/img/media1.webp" type="image/webp" />
-              <img src="/img/media1.png" alt="mediaImg"
-            /></picture>
-            <div class="media-text-block">
-              <p class="media-text">
-                Как правильно внедрять ЭДО? ТерраЛинк на Форуме ЭДО 2024
-                Практика
-              </p>
-              <span class="media-date">18.05.2023</span>
-            </div>
-          </div>
-          <div class="media-item ibg item">
-            <picture
-              ><source srcset="/img/media2.webp" type="image/webp" />
-              <img src="/img/media2.png" alt="mediaImg"
-            /></picture>
-            <div class="media-text-block">
-              <p class="media-text">
-                Компания ТерраЛинк заняла 6-ое место в рейтинге интеграторов по
-                налоговому мониторингу
-              </p>
-              <span class="media-date">18.05.2023</span>
-            </div>
-          </div>
-          <div class="media-item item ibg">
-            <picture
-              ><source srcset="/img/media3.webp" type="image/webp" />
-              <img src="/img/media3.png" alt="mediaImg"
-            /></picture>
-            <div class="media-text-block">
-              <p class="media-text">“Галактика Quantum.ERP” на замену SAP</p>
-              <span class="media-date">18.05.2023</span>
-            </div>
-          </div>
-          <div class="media-item ibg item">
-            <picture
-              ><source srcset="/img/media4.webp" type="image/webp" />
-              <img src="/img/media4.png" alt="mediaImg"
-            /></picture>
-            <div class="media-text-block">
-              <p class="media-text">
-                Компания ТерраЛинк представлена в 3 областях «Карты российского
-                рынка информационных технологий» за 2024 год 18.05.2023
-              </p>
-              <span class="media-date">18.05.2023</span>
-            </div>
-          </div>
-          <div class="media-item ibg item">
-            <picture
-              ><source srcset="/img/media5.webp" type="image/webp" />
-              <img src="/img/media5.png" alt="mediaImg"
-            /></picture>
-            <div class="media-text-block">
-              <p class="media-text">
-                ТерраЛинк принял участие в TAdviser SummIT 2024
-              </p>
-              <span class="media-date">18.05.2023</span>
-            </div>
-          </div>
-          <div class="media-item ibg item">
-            <picture
-              ><source srcset="/img/media6.webp" type="image/webp" />
-              <img src="/img/media6.png" alt="mediaImg"
-            /></picture>
-            <div class="media-text-block">
-              <p class="media-text">
-                Компания ТерраЛинк представлена в 3 областях «Карты российского
-                рынка информационных технологий» за 2024 год
-              </p>
-              <span class="media-date">18.05.2023</span>
-            </div>
-          </div>
-        </div>
-        <div class="article-btn m-0-auto">
-          <p>Все новости</p>
-          <img src="/img/arrow.svg" alt="arrow" />
-        </div>
-      </div>
-    </div>
+  </div>
+</div>
 
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20240915181421"></script>
+    <script src="files/slick.min.js?_v=20240915181421" rel="preload"></script>
+    <script src="files/glare.min.js?_v=20240915181421" rel="preload"></script>
     <script
-      src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20240915140444"
+      src="https://cdn.jsdelivr.net/npm/lottie-web"
       rel="preload"
     ></script>
-    <script src="files/slick.min.js?_v=20240915140444" rel="preload"></script>
-    <script src="files/glare.min.js?_v=20240915140444" rel="preload"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/lottie-web?_v=20240915140444"
-      rel="preload"
-    ></script>
-    <script src="js/app.min.js?_v=20240915140444" rel="preload"></script>
+    <script src="js/app.min.js?_v=20240915181421" rel="preload"></script>
   </body>
 </html>
