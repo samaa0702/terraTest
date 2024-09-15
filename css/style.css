@@ -93,6 +93,10 @@ h6 {
   font-weight: 400;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .first-screen {
   min-height: 100vh;
   background: #12042c;
@@ -135,7 +139,7 @@ h6 {
   max-width: 1200px;
   padding: 120px 80px;
   border-radius: 160px;
-  margin: 65vh auto 0;
+  margin: 400px auto 0;
   background-color: #fff;
   position: relative;
   z-index: 5;
@@ -382,26 +386,14 @@ body {
   display: none;
 }
 
-.body {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
-}
-
 .animation-fon {
   width: 100%;
-  height: 100%;
-  position: relative;
-  background: linear-gradient(40deg, var(--gradient-background-start), var(--gradient-background-end));
+  height: 100vh;
+  top: 0;
+  position: absolute;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-background-start)), to(#12042c));
+  background: linear-gradient(top, var(--gradient-background-start), #12042c);
 }
 
 .gradients-container {
