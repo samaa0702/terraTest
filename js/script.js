@@ -1,4 +1,4 @@
-const animationFon = document.querySelector(".animation-fon");
+const animationFon = document.querySelector(".first-screen");
 const gradientSix = document.querySelector(".gradient-six");
 const rect = animationFon.getBoundingClientRect();
 
